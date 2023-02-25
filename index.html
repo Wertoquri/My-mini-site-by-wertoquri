@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>FlexBox Nav</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <script src="../../jquery-3.6.3.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js.js"></script>
+  </head>
+  <body>
+    <div class="theme dark">Dark theme</div>
+    <div class="wrapper">
+      <header class="top">
+        <h1><a href="#">Site them. Me</a></h1>
+      </header>
+
+      <nav class="flex-nav">
+        <a href="#" class="toggleNav">☰ Menu</a>
+        <ul>
+          <li>
+            <a
+              href="https://images.unsplash.com/photo-1611915387288-fd8d2f5f928b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"
+              >Item 01</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://kitcat.com.sg/wp-content/uploads/2020/07/Kit-Cat.png"
+              >Item 02</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxeVKKhcw5BVb33-sIFbVwBxpGvFjAORNkHA&usqp=CAU"
+              >Item 03</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://media.npr.org/assets/img/2021/08/11/gettyimages-1279899488_wide-f3860ceb0ef19643c335cb34df3fa1de166e2761.jpg"
+              >Item 04</a
+            >
+          </li>
+          <li>
+            <a
+              href="http://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg"
+              >Item 05</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4PPPpQeXiWIC8_mV7P9u-tb6WACxsGGJ9Ow&usqp=CAU"
+              >Item 06</a
+            >
+          </li>
+          <li class="social">
+            <a href="https://twitter.com/wertoquri"
+              ><i class="fa fa-twitter"></i
+            ></a>
+          </li>
+          <li class="social">
+            <a href="https://www.facebook.com/kirilpojduk"
+              ><i class="fa fa-facebook"></i
+            ></a>
+          </li>
+          <li class="social">
+            <a href="https://github.com/Wertoquri"
+              ><i class="fa fa-github"></i
+            ></a>
+          </li>
+          <li class="social">
+            <a href="https://www.instagram.com/sqerawp/"
+              ><i class="fa fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="banner">
+        <img
+          src="https://images.unsplash.com/photo-1611915387288-fd8d2f5f928b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"
+        />
+      </section>
+
+      <section class="content">
+        <p>Here could be your advertisement!</p>
+        <p>Ihre Werbung kann hier sein!</p>
+        <p>您的廣告可能在這裡！</p>
+      </section>
+
+      <section class="signup">
+        <form action="" class="signup">
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Email Address" />
+          <input type="submit" value="Sign me up!" />
+        </form>
+      </section>
+
+      <footer>
+        <p>&copy; Site creator: Kyrylo Poidiuk</p>
+      </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $(".toggleNav").on("click", function () {
+          $(".flex-nav ul").toggleClass("open");
+        });
+      });
+    </script>
+  </body>
+</html>
